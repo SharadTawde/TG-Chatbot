@@ -3,9 +3,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".ui.LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+
+    <TextView
+        android:id="@+id/text_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans_bold"
+        android:text="TG'Ji Chatbot"
+        android:textColor="@color/text_color"
+        android:textSize="28sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/bg_edit_text"
+        android:fontFamily="@font/sans_bold"
+        android:hint="Enter Register Number"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/sans_bold"
+        android:onClick="getOtp"
+        android:text="Get otp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
 
 
 </LinearLayout>
